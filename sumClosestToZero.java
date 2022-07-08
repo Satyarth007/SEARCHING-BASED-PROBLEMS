@@ -6,7 +6,7 @@ public class sumClosestToZero {
 		int sum=Integer.MAX_VALUE;
 		
 		for(int i=0;i<size-1;i++) {
-			for(int j=i;j<size;j++) {
+			for(int j=i+1;j<size;j++) {
 				currSum=Math.abs(arr[i]+arr[j]);
 				if(sum>currSum) {
 					sum=currSum;
